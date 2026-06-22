@@ -2,12 +2,15 @@
   <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
   <nav class="site-nav">
     {% for item in site.nav %}
-      {% if item.path == "/" %}
-        {% assign is_active = page.url == item.path %}
+      {% if item.path == "/" and page.url == "/" %}
+        <a href="{{ item.path | relative_url }}" class="active">{{ item.title }}</a>
+      {% elsif item.path != "/" and page.url contains item.path %}
+        <a href="{{ item.path | relative_url }}" class="active">{{ item.title }}</a>
+      {% elsif item.path == "/blog/" and page.collection == "posts" %}
+        <a href="{{ item.path | relative_url }}" class="active">{{ item.title }}</a>
       {% else %}
-        {% assign is_active = page.url contains item.path %}
+        <a href="{{ item.path | relative_url }}">{{ item.title }}</a>
       {% endif %}
-      <a href="{{ item.path | relative_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
     {% endfor %}
   </nav>
 </header>
