@@ -17,7 +17,7 @@ I study, design and write software. I like mathematics. I have a bachelors degre
 
 ## Experience
 
-- **Role** at **Company** (Year–Year) — one-line description.
+- **Associate Software Engineer** at **Tekion Corp.** (2021–Now) — built systems to support fast and modular third party integrations. [Read more]({% post_url 2026-06-22-tekion-corp %})
 
 ## Skills
 
