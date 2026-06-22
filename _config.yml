@@ -1,0 +1,71 @@
+title: Aarif Khan
+description: Personal site, blog, projects, and shelf.
+url: "https://aarifkhan7.github.io"
+
+author:
+  name: Aarif Khan
+  email: ajajchauhan@gmail.com
+
+# Nav links shown in the header, in order.
+nav:
+  - title: Home
+    path: /
+  - title: Projects
+    path: /projects/
+  - title: Experiments
+    path: /experiments/
+  - title: Blog
+    path: /blog/
+  - title: Shelf
+    path: /shelf/
+  - title: Contact
+    path: /contact/
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  experiments:
+    output: true
+    permalink: /experiments/:path/
+  shelf:
+    output: true
+    permalink: /shelf/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: experiments
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: shelf
+    values:
+      layout: page
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+markdown: kramdown
+permalink: /:title/
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
