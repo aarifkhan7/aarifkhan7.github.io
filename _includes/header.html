@@ -2,7 +2,12 @@
   <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
   <nav class="site-nav">
     {% for item in site.nav %}
-      <a href="{{ item.path | relative_url }}">{{ item.title }}</a>
+      {% if item.path == "/" %}
+        {% assign is_active = page.url == item.path %}
+      {% else %}
+        {% assign is_active = page.url contains item.path %}
+      {% endif %}
+      <a href="{{ item.path | relative_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
     {% endfor %}
   </nav>
 </header>
