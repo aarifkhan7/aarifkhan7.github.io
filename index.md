@@ -5,11 +5,11 @@ title: Home
 
 # Aarif Khan
 
-Short intro / resume summary goes here.
+Me, Computer Science, Software Engineering and Mathematics.
 
 ## About
 
-A paragraph about who you are and what you do.
+I study, design and write software. I like mathematics. I have a bachelors degree in Computer Science and Engineering, and work full time at a SaaS company.
 
 ## Resume
 
