@@ -74,6 +74,11 @@ a:hover {
   font-size: 0.9rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.25rem;
+}
+
 .post-meta {
   color: var(--color-muted);
   font-size: 0.9rem;
