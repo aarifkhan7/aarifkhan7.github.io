@@ -17,7 +17,9 @@ I study, design and write software. I like mathematics. I have a bachelors degre
 
 ## Experience
 
-- **Associate Software Engineer** at **Tekion Corp.** (2025–Now) — built systems to support fast and modular third party integrations. [Read more]({% post_url 2026-06-22-tekion-corp %})
+- **Associate Software Engineer** at **Tekion Corp.** (2025–Now) - built systems to support fast and modular third party integrations. [Read more]({% post_url 2026-06-22-tekion-corp %})
+
+- **Software Developer Intern** at **Location Solutions, LLC** (Mar 2024–Aug 2024) - overhauled a legacy project in Node.js, implemented RESTful APIs (20% perf gain), in-memory join algorithms, unit testing, and OpenTelemetry logging integration.
 
 ## Skills
 
