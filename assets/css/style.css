@@ -93,6 +93,29 @@ ul.entry-list li {
   margin-bottom: 1rem;
 }
 
+#scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+#scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 ul.entry-list .entry-meta {
   color: var(--color-muted);
   font-size: 0.9rem;
