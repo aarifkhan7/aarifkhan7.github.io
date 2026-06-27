@@ -22,7 +22,11 @@ list, and presented it to the team, receiving a positive response.
 
 With a UI design from the design team in hand, I moved into high-level and low-level
 system design. Once that was approved, I completed the implementation using Next.js
-on the frontend and Express.js on the backend.
+on the frontend and Express on the backend.
+
+A key part of this was implementing database join algorithms to execute in-memory
+joins on the application data. I then conducted comprehensive testing and debugging,
+and added unit tests to the core backend algorithms to ensure reliability.
 
 Before rolling it out for general availability, I presented the application to a
 group of 5 internal teammates selected as pilot users (who had client facing support roles). They used it, liked it, and
