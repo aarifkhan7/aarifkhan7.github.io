@@ -30,7 +30,7 @@ Before the general release, I showed the application to 5 internal teammates wit
 client-facing support roles, selected as pilot users. They liked it and shared a
 few minor UX improvement suggestions.
 
-It felt great to see my work make a real difference — the revamp reduced service
+It felt great to see my work make a real difference - the revamp reduced service
 time by close to 20%.
 
 Working with the agile team was a great experience, and I came away with both

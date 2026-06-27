@@ -4,7 +4,7 @@ title: Experiments
 permalink: /experiments/
 ---
 
-Smaller, rougher work-in-progress things — not as polished as [Projects](/projects/).
+Smaller, rougher work-in-progress things - not as polished as [Projects](/projects/).
 
 <ul class="entry-list">
   {% for experiment in site.experiments %}
