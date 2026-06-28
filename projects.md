@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
+A running collection of things I've built — finished, half-finished, and everything in between. Some came out of curiosity, some from wanting to learn something new, some from a hackathon weekend, and some just because an idea wouldn't leave me alone.
+
 <ul class="entry-list">
   {% for project in site.projects %}
     <li>
