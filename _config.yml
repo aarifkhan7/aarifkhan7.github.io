@@ -1,5 +1,5 @@
 title: Aarif Khan
-description: Personal site, blog, projects, and shelf.
+description: Personal site, blog, and projects.
 url: "https://aarifkhan7.github.io"
 
 author:
@@ -13,12 +13,8 @@ nav:
     path: /
   - title: Projects
     path: /projects/
-  - title: Experiments
-    path: /experiments/
   - title: Blog
     path: /blog/
-  - title: Shelf
-    path: /shelf/
   - title: Contact
     path: /contact/
 
@@ -26,12 +22,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  experiments:
-    output: true
-    permalink: /experiments/:path/
-  shelf:
-    output: true
-    permalink: /shelf/:path/
 
 defaults:
   - scope:
@@ -42,16 +32,6 @@ defaults:
   - scope:
       path: ""
       type: projects
-    values:
-      layout: page
-  - scope:
-      path: ""
-      type: experiments
-    values:
-      layout: page
-  - scope:
-      path: ""
-      type: shelf
     values:
       layout: page
   - scope:
