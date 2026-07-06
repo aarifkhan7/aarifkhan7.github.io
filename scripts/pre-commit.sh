@@ -8,5 +8,5 @@ cd "$(git rev-parse --show-toplevel)"
 if git diff --cached --name-only | grep -qx 'resume.md'; then
   echo "resume.md changed — regenerating resume.pdf..."
   ./scripts/build-resume-pdf.sh
-  git add resume.pdf
+  git add resume.pdf Aarif_Khan_Resume.pdf
 fi

@@ -30,4 +30,6 @@ weasyprint "$html" resume.pdf \
   --stylesheet scripts/resume.css \
   --base-url "$(pwd)"
 
-echo "Wrote resume.pdf"
+cp resume.pdf Aarif_Khan_Resume.pdf
+
+echo "Wrote resume.pdf and Aarif_Khan_Resume.pdf"
