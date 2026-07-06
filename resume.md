@@ -21,6 +21,16 @@ permalink: /resume/
 - Conducted comprehensive testing and debugging, and added unit testing to backend algorithms.
 - Integrated OpenTelemetry logs into a legacy service to improve monitoring and troubleshooting capabilities.
 
+## Projects
+
+**Real Time Object Detection on a Video Stream from Drone/Mobile** — Team/hackathon project, built during CodeUtsava 7.0 — [Source](https://github.com/aarifkhan7/codeutsava7)
+- Problem solved: pothole detection using drone footage and machine learning.
+- Tools & technologies used: MERN stack, Flask, OpenCV, YOLOv8, RTMP protocol.
+- Took an input stream from an RTMP source and ran object detection on the video frames.
+- Built the detection script with OpenCV to run object detection and send frames to the server and database.
+- Built an API to store detected frames into the file system and MongoDB database.
+- Built a frontend UI in React to interact with the detected objects.
+
 ## Education
 
 **B.Tech in Computer Science and Engineering** — National Institute of Technology, Raipur — 2025
