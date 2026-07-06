@@ -1,21 +1,33 @@
 #!/usr/bin/env bash
-# Regenerate assets/resume.pdf from resume.md.
-# Requires: pandoc, weasyprint (sudo apt-get install pandoc weasyprint)
+# Regenerate assets/resume.pdf from the rendered /resume/ page, so Jekyll/Liquid
+# variables (site.author.*, etc.) are resolved before converting to PDF.
+# Requires: weasyprint (sudo apt-get install weasyprint)
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-body=$(mktemp)
-trap 'rm -f "$body"' EXIT
+bundle exec jekyll build >/dev/null
 
-# Strip the Jekyll front matter (everything between the first two --- lines).
-awk '/^---$/{c++; next} c>=2' resume.md > "$body"
+html=$(mktemp --suffix=.html)
+trap 'rm -f "$html"' EXIT
 
-pandoc "$body" \
-  -f markdown -t pdf --pdf-engine=weasyprint \
-  --metadata title="Aarif Khan — Resume" \
-  --css scripts/resume.css \
-  -V margin-top=1in -V margin-bottom=1in -V margin-left=1in -V margin-right=1in \
-  -o assets/resume.pdf
+python3 - "$html" <<'EOF'
+import re, sys
+
+with open("_site/resume/index.html") as f:
+    page = f.read()
+
+match = re.search(r'<article class="page">(.*?)</article>', page, re.DOTALL)
+content = match.group(1)
+
+with open(sys.argv[1], "w") as f:
+    f.write(f"""<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Aarif Khan — Resume</title></head>
+<body>{content}</body></html>""")
+EOF
+
+weasyprint "$html" assets/resume.pdf \
+  --stylesheet scripts/resume.css \
+  --base-url "$(pwd)"
 
 echo "Wrote assets/resume.pdf"
