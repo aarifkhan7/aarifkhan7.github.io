@@ -1,6 +1,9 @@
-body { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #222; }
-h1 { font-size: 20pt; margin-bottom: 0.2em; }
-h2 { font-size: 13pt; border-bottom: 1px solid #ccc; padding-bottom: 2px; margin-top: 1.2em; }
+@page { size: A4; margin: 1cm 1.4cm; }
+body { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; line-height: 1.25; color: #222; margin: 0; }
+h1 { font-size: 16pt; margin: 0 0 0.15em; }
+h2 { font-size: 11pt; border-bottom: 1px solid #ccc; padding-bottom: 1px; margin: 0.6em 0 0.2em; }
+p { margin: 0.2em 0; }
 a { color: #222; text-decoration: none; border-bottom: 1px solid #999; }
-ul { margin-top: 0.3em; }
+ul { margin: 0.15em 0; padding-left: 1.2em; }
+li { margin-bottom: 0.05em; }
 blockquote { color: #888; border-left: 3px solid #ccc; padding-left: 0.8em; margin-left: 0; }
