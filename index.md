@@ -13,7 +13,7 @@ I study, design and write software. I like mathematics. I have a bachelors degre
 
 ## Resume
 
-- [View resume](/resume/) · [Download as PDF](/assets/resume.pdf)
+- [View resume](/resume/) · [Download as PDF](/resume.pdf)
 
 ## Experience
 

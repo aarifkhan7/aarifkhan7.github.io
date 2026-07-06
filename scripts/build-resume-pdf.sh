@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Regenerate assets/resume.pdf from the rendered /resume/ page, so Jekyll/Liquid
+# Regenerate resume.pdf from the rendered /resume/ page, so Jekyll/Liquid
 # variables (site.author.*, etc.) are resolved before converting to PDF.
 # Requires: weasyprint (sudo apt-get install weasyprint)
 set -euo pipefail
@@ -26,8 +26,8 @@ with open(sys.argv[1], "w") as f:
 <body>{content}</body></html>""")
 EOF
 
-weasyprint "$html" assets/resume.pdf \
+weasyprint "$html" resume.pdf \
   --stylesheet scripts/resume.css \
   --base-url "$(pwd)"
 
-echo "Wrote assets/resume.pdf"
+echo "Wrote resume.pdf"
