@@ -5,7 +5,8 @@ permalink: /resume/
 ---
 
 **{{ site.author.name }}**
-[{{ site.author.email }}](mailto:{{ site.author.email }}) · [LinkedIn]({{ site.author.linkedin }}) · [GitHub](https://github.com/aarifkhan7)
+
+[{{ site.author.email }}](mailto:{{ site.author.email }}) · [Website]({{ site.url }}) · [LinkedIn]({{ site.author.linkedin }}) · [GitHub](https://github.com/aarifkhan7)
 
 ## Experience
 
