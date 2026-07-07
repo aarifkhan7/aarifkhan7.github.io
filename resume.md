@@ -10,10 +10,13 @@ permalink: /resume/
 
 ## Experience
 
-**Software Engineering Intern**, Tekion Corp. — Bengaluru, India — Jan 2025–Present
-- Completed a structured internship learning phase focused on Java, Spring Boot (AOP, transactions, REST), concurrency (ForkJoinPool, CompletableFuture), and design principles (SOLID, patterns), integrating Elasticsearch, Redis, and Kafka to build a performant, event-driven project with caching and search capabilities.
-- Enabled forward compatibility in an existing Java microservice, ensuring smooth integration with future modules and enhancing system resilience.
-- Designed and implemented a standalone application to separate concerns among services, improving codebase modularity and maintainability.
+**Software Engineer**, Tekion Corp. — Bengaluru, India — Jan 2025–Present (joined as Software Engineering Intern)
+- Designed and delivered webhook infrastructure for the service platform across multiple environments (pre-prod, prod, prod-EU), architected as a modular, plug-and-play system so new webhook publishers onboard with minimal effort; it became a core platform component powering critical async workflows for Hyundai and Ford integrations, delivered in close collaboration with a partner team on shared design patterns and rollout timelines.
+- Owned backend design and implementation for a GM vehicle check-in feature end to end, including a screen-agnostic job-creation API that serves all consuming screens through a single clean, reusable contract with no per-screen logic.
+- Built a warranty claim API that was a key enabler for a Ford repair-order integration, and stabilized the external API surface for integration consumers through enhancements and defect fixes.
+- Identified and fixed critical defects in the warranty posting pipeline — issues with direct financial-accuracy impact for dealers; added upstream validation to reject invalid entries and backed the fixes with automation test coverage.
+- Adopted AI-assisted development tools early and built structured workflows shared with the team, tangibly improving developer efficiency beyond personal productivity.
+- Tools & technologies used: Java, Spring Boot, Kafka, Redis, Elasticsearch, MongoDB, REST APIs.
 
 **Software Developer Intern**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
 - Rewrote a legacy project using Node.js, enhancing performance, scalability, and maintainability.
@@ -66,7 +69,7 @@ Percentage: 91%
 
 **Frameworks:** Spring Boot, Express.js, Node.js
 
-**Cloud / Databases:** SQL, MongoDB, Kafka, Redis
+**Cloud / Databases:** SQL, MongoDB, Kafka, Redis, Elasticsearch
 
 **Soft Skills:** Communication, Team Collaboration, Problem-solving, Analytical Thinking
 
