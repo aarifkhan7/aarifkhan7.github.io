@@ -6,6 +6,7 @@ permalink: /projects/
 
 A running collection of things I've built - finished, half-finished, and everything in between. Some came out of curiosity, some from wanting to learn something new, some from a hackathon weekend, and some just because an idea wouldn't leave me alone.
 
+{% if site.projects.size > 0 %}
 <ul class="entry-list">
   {% for project in site.projects %}
     <li>
@@ -14,3 +15,6 @@ A running collection of things I've built - finished, half-finished, and everyth
     </li>
   {% endfor %}
 </ul>
+{% else %}
+<p class="entry-meta">Coming soon.</p>
+{% endif %}
