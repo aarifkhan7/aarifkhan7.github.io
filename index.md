@@ -11,6 +11,19 @@ Me, Computer Science, Software Engineering and Mathematics.
 
 I study, design and write software. I like mathematics. I have a bachelors degree in Computer Science and Engineering, and work full time at a SaaS company.
 
+## Latest Posts
+
+<ul class="entry-list">
+  {% for post in site.posts limit: 5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="entry-meta">{{ post.date | date: '%B %-d, %Y' }}</div>
+    </li>
+  {% endfor %}
+</ul>
+
+[View all posts](/blog/)
+
 ## Resume
 
 - [View resume](/resume/) · [Download as PDF](/Aarif_Khan_Resume.pdf)
