@@ -2,6 +2,9 @@
 layout: page
 title: Contact
 permalink: /contact/
+description: >-
+  Get in touch with Aarif Khan, a software engineer specializing in
+  Computer Science, Software Engineering, and Mathematics.
 ---
 
 Get in touch:

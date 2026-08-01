@@ -1,5 +1,8 @@
 ---
 title: Software Developer Intern at Location Solutions, LLC
+description: >-
+  My internship as a Software Developer at Location Solutions, LLC,
+  overhauling a legacy Node.js project with RESTful APIs and performance gains.
 ---
 
 From March to August 2024, I worked as a part-time remote Software Developer Intern

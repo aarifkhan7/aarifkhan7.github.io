@@ -2,6 +2,9 @@
 layout: page
 title: Resume
 permalink: /resume/
+description: >-
+  Resume of Aarif Khan, a software engineer with experience in backend
+  systems, RESTful APIs, and a background in Computer Science and Mathematics.
 ---
 
 **{{ site.author.name }}**

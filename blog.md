@@ -2,6 +2,9 @@
 layout: page
 title: Blog
 permalink: /blog/
+description: >-
+  Aarif Khan's blog on software engineering, computer science, and
+  mathematics, covering topics from work experience to technical deep dives.
 ---
 
 <ul class="entry-list">

@@ -1,5 +1,8 @@
 ---
 title: Associate Software Engineer at Tekion Corp.
+description: >-
+  My experience as an Associate Software Engineer at Tekion Corp.,
+  building backend systems for modular third-party integrations.
 ---
 
 Since January 2025, I've been working at Tekion Corp. in Bengaluru, where I joined

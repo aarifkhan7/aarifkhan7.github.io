@@ -1,6 +1,13 @@
 title: Aarif Khan
-description: Personal site, blog, and projects.
+description: >-
+  Personal site of Aarif Khan, a software engineer specializing in
+  Computer Science and Mathematics. Read the blog, browse projects,
+  and view the resume.
 url: "https://aarifkhan.com"
+social:
+  name: Aarif Khan
+  links:
+    - https://www.linkedin.com/in/aarif-khan-b1aa97171/
 
 author:
   name: Aarif Khan
@@ -44,9 +51,12 @@ permalink: /:title/
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - CLAUDE.md
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - seo-analysis.pdf

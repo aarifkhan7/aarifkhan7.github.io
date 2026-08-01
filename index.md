@@ -1,6 +1,9 @@
 ---
 layout: home
-title: Home
+title: Aarif Khan | Software Engineer, Computer Science & Mathematics
+description: >-
+  Aarif Khan is a software engineer with a background in Computer Science,
+  Software Engineering, and Mathematics. Browse his resume, projects, and blog.
 ---
 
 # Aarif Khan

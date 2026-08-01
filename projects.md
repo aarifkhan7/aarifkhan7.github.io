@@ -2,6 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
+description: >-
+  A showcase of software and machine learning projects built by Aarif Khan,
+  spanning computer vision, backend systems, and applied mathematics.
 ---
 
 A running collection of things I've built - finished, half-finished, and everything in between. Some came out of curiosity, some from wanting to learn something new, some from a hackathon weekend, and some just because an idea wouldn't leave me alone.
