@@ -22,7 +22,7 @@ description: >-
 - Diagnosed and fixed a P0 production incident where a warranty posting defect caused ~2,000 invalid entries for the first dealer migrated to a new system (out of 2,000 total customers); added upstream validation that prevented recurrence across the next 250 dealers migrated
 
 **Associate Software Developer**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
-- Rewrote a legacy .NET/C# service in Node.js, improving performance, scalability, and maintainability; reduced average response time by 20% for a specific workload, used by every Location Solutions customer- Implemented RESTful APIs, resulting in a 20% performance increase and lowered response times.
+- Rewrote a legacy .NET/C# service in Node.js, improving performance, scalability, and maintainability; reduced average response time by 20% for a specific workload, used by every Location Solutions customer
 - Implemented in-memory join algorithms for time-series application data, avoiding repeated single-record database read/write round-trips of the database.
 - Increased backend algorithm test coverage to 60% through comprehensive unit testing, improving reliability and reducing regressions
 - Integrated OpenTelemetry logging into a legacy service, enabling retroactive debugging of customer-reported failures that previously had no visibility.
