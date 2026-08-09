@@ -67,7 +67,7 @@ Percentage: 91%
 
 **Languages:** C++, JavaScript, Java
 
-**Developer Tools:** VS Code, Git, Postman, Chrome Developer Tools
+**Developer Tools:** Git, Postman, Chrome Developer Tools
 
 **Frameworks:** Spring Boot, Express.js, Node.js
 
