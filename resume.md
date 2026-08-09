@@ -14,17 +14,16 @@ description: >-
 ## Experience
 
 **Software Engineer**, Tekion Corp. — Bengaluru, India — Jan 2025–Present (joined as Software Engineering Intern)
-- Designed and delivered webhook infrastructure for the service platform architected as a modular, plug-and-play system so new webhook publishers onboard with minimal effort, processing 500 Kafka records/sec; it became a core platform component powering critical async workflows for Hyundai and Ford integrations, delivered in close collaboration with a partner team on shared design patterns and rollout timelines.
+- Designed and delivered modular, plug-and-play webhook infrastructure processing 500 Kafka records/sec, enabling new publishers to onboard by adding a single class — no changes to existing code
 - Reduced p99 latency from 400ms to under 200ms (a 50% improvement) by root-causing and resolving a p99 latency SLA breach on a production open API GET endpoint through query optimization.
-- Reduced average latency from 350ms to 10ms (a 97% improvement) on a read-heavy config API handling 50 req/sec by caching infrequently-changed config values in memory.
-- Owned backend design and implementation for a GM vehicle check-in feature end to end, including a screen-agnostic job-creation API that serves all consuming screens through a single clean, reusable contract with no per-screen logic.
-- Developed open APIs for external integration consumers, including a warranty claim API that was a key enabler for a Ford repair-order integration, and stabilized the open API surface through enhancements and defect fixes.
-- Identified and fixed critical defects in the warranty posting pipeline — issues with direct financial-accuracy impact for dealers; added upstream validation to reject invalid entries and backed the fixes with automation test coverage.
-- Tools & technologies used: Java, Spring Boot, Kafka, Redis, Elasticsearch, MongoDB, REST APIs.
+- Decreased average latency from 350ms to 10ms (a 97% improvement) on a read-heavy config API handling 50 req/sec by caching infrequently-changed config values in memory.
+- Owned backend design and implementation for a GM vehicle check-in feature end to end, building a screen-agnostic job-creation API that consolidated 4 separate screen integrations into a single reusable contract with no per-screen logic
+- Built a Systems Integrator platform enabling third-party companies to develop integrations on Tekion's open APIs — deployed in an isolated cluster for security, reducing integration go-to-market time by shifting delivery from a single internal team to multiple third-party teams working in parallel, validated by delivering the first proof-of-concept integration with a small team
+- Diagnosed and fixed a P0 production incident where a warranty posting defect caused ~2,000 invalid entries for the first dealer migrated to a new system (out of 2,000 total customers); added upstream validation that prevented recurrence across the next 250 dealers migrated
 
 **Software Developer Intern**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
 - Rewrote a legacy project using Node.js, enhancing performance, scalability, and maintainability.
-- Implemented RESTful APIs, resulting in a 20% performance increase and reduced response times.
+- Implemented RESTful APIs, resulting in a 20% performance increase and lowered response times.
 - Implemented database join algorithms to execute in-memory joins on application data.
 - Conducted comprehensive testing and debugging, and added unit testing to backend algorithms.
 - Integrated OpenTelemetry logs into a legacy service to improve monitoring and troubleshooting capabilities.
