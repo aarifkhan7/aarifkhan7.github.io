@@ -57,12 +57,6 @@ description: >-
 **B.Tech in Computer Science and Engineering** — National Institute of Technology, Raipur — 2025
 CGPA/Percentage: 7.52
 
-**Class 12th (CBSE)** — O. P. Jindal School, Raigarh — 2020
-Percentage: 93.6%
-
-**Class 10th (CBSE)** — O. P. Jindal School, Raigarh — 2018
-Percentage: 91%
-
 ## Skills
 
 **Languages:** C++, JavaScript, Java
