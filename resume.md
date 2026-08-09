@@ -21,12 +21,11 @@ description: >-
 - Built a Systems Integrator platform enabling third-party companies to develop integrations on Tekion's open APIs — deployed in an isolated cluster for security, reducing integration go-to-market time by shifting delivery from a single internal team to multiple third-party teams working in parallel, validated by delivering the first proof-of-concept integration with a small team
 - Diagnosed and fixed a P0 production incident where a warranty posting defect caused ~2,000 invalid entries for the first dealer migrated to a new system (out of 2,000 total customers); added upstream validation that prevented recurrence across the next 250 dealers migrated
 
-**Software Developer Intern**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
-- Rewrote a legacy project using Node.js, enhancing performance, scalability, and maintainability.
-- Implemented RESTful APIs, resulting in a 20% performance increase and lowered response times.
-- Implemented database join algorithms to execute in-memory joins on application data.
-- Conducted comprehensive testing and debugging, and added unit testing to backend algorithms.
-- Integrated OpenTelemetry logs into a legacy service to improve monitoring and troubleshooting capabilities.
+**Associate Software Developer**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
+- Rewrote a legacy .NET/C# service in Node.js, improving performance, scalability, and maintainability; reduced average response time by 20% for a specific workload, used by every Location Solutions customer- Implemented RESTful APIs, resulting in a 20% performance increase and lowered response times.
+- Implemented in-memory join algorithms for time-series application data, avoiding repeated single-record database read/write round-trips of the database.
+- Increased backend algorithm test coverage to 60% through comprehensive unit testing, improving reliability and reducing regressions
+- Integrated OpenTelemetry logging into a legacy service, enabling retroactive debugging of customer-reported failures that previously had no visibility.
 
 ## Projects
 
