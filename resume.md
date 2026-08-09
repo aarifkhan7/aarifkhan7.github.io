@@ -19,7 +19,7 @@ description: >-
 - Decreased average latency from 350ms to 10ms (a 97% improvement) on a read-heavy config API handling 50 req/sec by caching infrequently-changed config values in memory.
 - Owned backend design and implementation for a GM vehicle check-in feature end to end, building a screen-agnostic job-creation API that consolidated 4 separate screen integrations into a single reusable contract with no per-screen logic
 - Built a Systems Integrator platform enabling third-party companies to develop integrations on Tekion's open APIs — deployed in an isolated cluster for security, reducing integration go-to-market time by shifting delivery from a single internal team to multiple third-party teams working in parallel, validated by delivering the first proof-of-concept integration with a small team
-- Diagnosed and fixed a P0 production incident where a warranty posting defect caused ~2,000 invalid entries for the first dealer migrated to a new system (out of 2,000 total customers); added upstream validation that prevented recurrence across the next 250 dealers migrated
+- Diagnosed and fixed a P0 production incident where a warranty posting defect caused ~2,000 invalid entries for the first dealer migrated to a new system (out of 2,000 total customers);
 
 **Associate Software Developer**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
 - Rewrote a legacy .NET/C# service in Node.js, improving performance, scalability, and maintainability; reduced average response time by 20% for a specific workload, used by every Location Solutions customer
