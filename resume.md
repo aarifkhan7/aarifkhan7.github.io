@@ -55,7 +55,7 @@ description: >-
 ## Education
 
 **B.Tech in Computer Science and Engineering** — National Institute of Technology, Raipur — 2025
-CGPA/Percentage: 7.52
+CGPA/Percentage: 7.52/10
 
 ## Skills
 
