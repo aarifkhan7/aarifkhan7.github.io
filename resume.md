@@ -77,4 +77,3 @@ CGPA/Percentage: 7.52/10
 - **Winner, CSE-MCA-IT branch, Vigyan Science Exhibition** — organized by NIT Raipur — Oct 2023
 - **Codeforces Specialist** — Global Rank 530 in Codeforces Round 944 (Div. 4) — May 2024
 - **Global Rank 2446/29648** in LeetCode Biweekly Contest 112
-- **Solved 700+ DSA and problem-solving questions** across different platforms
