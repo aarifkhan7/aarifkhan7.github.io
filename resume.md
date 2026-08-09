@@ -47,11 +47,6 @@ description: >-
 - Built the UI with terminal-kit to display game state on the terminal.
 - Implemented a custom communication protocol over bare TCP.
 
-**Address Book (Website)** — Stores wallet addresses with copy-to-clipboard access from any device
-- Tools & technologies used: React.js, Express.js, MongoDB, JWT.
-- Built a CRUD API on REST principles with Express.js, storing data in MongoDB.
-- Implemented authentication using JWT.
-
 ## Education
 
 **B.Tech in Computer Science and Engineering** — National Institute of Technology, Raipur — 2025
