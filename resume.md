@@ -14,11 +14,12 @@ description: >-
 ## Experience
 
 **Software Engineer**, Tekion Corp. — Bengaluru, India — Jan 2025–Present (joined as Software Engineering Intern)
-- Designed and delivered webhook infrastructure for the service platform across multiple environments (pre-prod, prod, prod-EU), architected as a modular, plug-and-play system so new webhook publishers onboard with minimal effort; it became a core platform component powering critical async workflows for Hyundai and Ford integrations, delivered in close collaboration with a partner team on shared design patterns and rollout timelines.
+- Designed and delivered webhook infrastructure for the service platform architected as a modular, plug-and-play system so new webhook publishers onboard with minimal effort, processing 500 Kafka records/sec; it became a core platform component powering critical async workflows for Hyundai and Ford integrations, delivered in close collaboration with a partner team on shared design patterns and rollout timelines.
+- Reduced p99 latency from 400ms to under 200ms (a 50% improvement) by root-causing and resolving a p99 latency SLA breach on a production open API GET endpoint through query optimization.
+- Reduced average latency from 350ms to 10ms (a 97% improvement) on a read-heavy config API handling 50 req/sec by caching infrequently-changed config values in memory.
 - Owned backend design and implementation for a GM vehicle check-in feature end to end, including a screen-agnostic job-creation API that serves all consuming screens through a single clean, reusable contract with no per-screen logic.
 - Developed open APIs for external integration consumers, including a warranty claim API that was a key enabler for a Ford repair-order integration, and stabilized the open API surface through enhancements and defect fixes.
 - Identified and fixed critical defects in the warranty posting pipeline — issues with direct financial-accuracy impact for dealers; added upstream validation to reject invalid entries and backed the fixes with automation test coverage.
-- Adopted AI-assisted development tools early and built structured workflows shared with the team, tangibly improving developer efficiency beyond personal productivity.
 - Tools & technologies used: Java, Spring Boot, Kafka, Redis, Elasticsearch, MongoDB, REST APIs.
 
 **Software Developer Intern**, Location Solutions, LLC — Dubai (Remote, Part-time) — Mar 2024–Aug 2024
