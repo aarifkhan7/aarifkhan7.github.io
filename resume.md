@@ -37,7 +37,7 @@ description: >-
 - Built an API to store detected frames into the file system and MongoDB database.
 - Built a frontend UI in React to interact with the detected objects.
 
-**Intelligent Haze Classification and Dehazing** — Independent project, Bachelor's minor project — [Source]({{ site.baseurl }}/projects/2026-07-26-dehazer/)
+**CNN-Based Haze Classification and Dehazing** — Independent project, Bachelor's minor project — [Source]({{ site.baseurl }}/projects/2026-07-26-dehazer/)
 - Tools & technologies used: Python, TensorFlow/Keras, CNNs, Res2Net, PixelShuffle.
 - Built a 3-class CNN classifier (No Haze / Mild / Dense) to route hazy images to a haze-level-appropriate dehazing network, reaching 93% validation accuracy, up from 37% at epoch one.
 - Implemented a teacher-student knowledge-transfer dehazing network (based on Wu et al.'s KTDN architecture) from a research paper with unspecified training details, combining L2, SSIM, and VGG19 perceptual losses for the teacher network.
