@@ -55,11 +55,13 @@ CGPA/Percentage: 7.52/10
 
 ## Skills
 
-**Languages:** C++, JavaScript, Java
+**Languages:** C++, JavaScript, Java, Python
 
 **Developer Tools:** Git, Postman, Chrome Developer Tools
 
 **Frameworks:** Spring Boot, Express.js, Node.js
+
+**Machine Learning:** TensorFlow/Keras, Hugging Face Transformers, CNNs
 
 **Cloud / Databases:** SQL, MongoDB, Kafka, Redis, Elasticsearch
 
