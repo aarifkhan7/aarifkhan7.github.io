@@ -32,8 +32,7 @@ description: >-
 **Schema-Guaranteed LLM Decoding for Structured Medical Extraction** — Independent project — [Source](https://www.kaggle.com/code/ajajchauhan/outlines-in-langchain)
 - Tools & technologies used: Python, Transformers, XGrammar, Pydantic, Qwen2.5-1.5B.
 - Built a grammar-constrained LLM pipeline using XGrammar to compile a JSON schema into GPU-level token constraints, guaranteeing schema-valid structured output (symptom, severity, duration, category) from unstructured clinical notes.
-- Validated 200 real clinical notes end-to-end, measuring structural validity (JSON parses and matches schema) and semantic accuracy (extracted category matches ground-truth medical specialty) as two distinct correctness checks.
-- Achieved 98.5% structural validity (197/200, all 3 failures traced to an unhandled end-of-text token edge case) and 6.6% semantic accuracy against ground-truth labels on a 1.5B-parameter model; failure analysis identified model capacity, not the schema constraint, as the primary driver of semantic misses.
+- Validated 200 real clinical notes end-to-end, measuring structural validity (JSON parses and matches schema) separately from semantic accuracy (extracted category matches ground-truth medical specialty), then ran failure analysis on the misses to trace them to model capacity rather than the schema constraint.
 
 **Real Time Object Detection on a Video Stream from Drone/Mobile** — Team/hackathon project, built during CodeUtsava 7.0 — [Source](https://github.com/aarifkhan7/codeutsava7)
 - Problem solved: pothole detection using drone footage and machine learning.
