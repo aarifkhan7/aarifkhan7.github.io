@@ -37,15 +37,16 @@ description: >-
 - Built an API to store detected frames into the file system and MongoDB database.
 - Built a frontend UI in React to interact with the detected objects.
 
+**Intelligent Haze Classification and Dehazing** — Independent project, Bachelor's minor project — [Source]({{ site.baseurl }}/projects/2026-07-26-dehazer/)
+- Tools & technologies used: Python, TensorFlow/Keras, CNNs, Res2Net, PixelShuffle.
+- Built a 3-class CNN classifier (No Haze / Mild / Dense) to route hazy images to a haze-level-appropriate dehazing network, reaching 93% validation accuracy, up from 37% at epoch one.
+- Implemented a teacher-student knowledge-transfer dehazing network (based on Wu et al.'s KTDN architecture) from a research paper with unspecified training details, combining L2, SSIM, and VGG19 perceptual losses for the teacher network.
+- Trained the teacher network on a combined RESIDE/I-Haze/O-Haze/NH-Haze dataset, reducing validation loss from 0.40 to 0.15 over 200 epochs.
+
 **Video Conferencing Website** — [Live](https://meet-clone-s9i0.onrender.com/) · [Source](https://github.com/aarifkhan7/meet-clone-frontend)
 - Tools & technologies used: React.js, Express.js, Socket.io, WebRTC (Peer.js).
 - Users create unique code-identified meeting rooms and share them to invite others.
 - Built the backend server with Express.js to handle rooms and connection setup, using peer-to-peer WebRTC for video streaming and Socket.io for WebRTC signalling.
-
-**Multiplayer TicTacToe Game for Terminal** — Playable over LAN — [Source](https://github.com/aarifkhan7/tictactoe-lan)
-- Tools & technologies used: Node.js, network sockets.
-- Built the UI with terminal-kit to display game state on the terminal.
-- Implemented a custom communication protocol over bare TCP.
 
 ## Education
 
