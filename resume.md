@@ -29,6 +29,12 @@ description: >-
 
 ## Projects
 
+**Schema-Guaranteed LLM Decoding for Structured Medical Extraction** — Independent project — [Source](https://www.kaggle.com/code/ajajchauhan/outlines-in-langchain)
+- Tools & technologies used: Python, Transformers, XGrammar, Pydantic, Qwen2.5-1.5B.
+- Built a grammar-constrained LLM pipeline using XGrammar to compile a JSON schema into GPU-level token constraints, guaranteeing schema-valid structured output (symptom, severity, duration, category) from unstructured clinical notes.
+- Validated 200 real clinical notes end-to-end, measuring structural validity (JSON parses and matches schema) and semantic accuracy (extracted category matches ground-truth medical specialty) as two distinct correctness checks.
+- Achieved 98.5% structural validity (197/200, all 3 failures traced to an unhandled end-of-text token edge case) and 6.6% semantic accuracy against ground-truth labels on a 1.5B-parameter model; failure analysis identified model capacity, not the schema constraint, as the primary driver of semantic misses.
+
 **Real Time Object Detection on a Video Stream from Drone/Mobile** — Team/hackathon project, built during CodeUtsava 7.0 — [Source](https://github.com/aarifkhan7/codeutsava7)
 - Problem solved: pothole detection using drone footage and machine learning.
 - Tools & technologies used: MERN stack, Flask, OpenCV, YOLOv8, RTMP protocol.
@@ -42,11 +48,6 @@ description: >-
 - Built a 3-class CNN classifier (No Haze / Mild / Dense) to route hazy images to a haze-level-appropriate dehazing network, reaching 93% validation accuracy, up from 37% at epoch one.
 - Implemented a teacher-student knowledge-transfer dehazing network (based on Wu et al.'s KTDN architecture) from a research paper with unspecified training details, combining L2, SSIM, and VGG19 perceptual losses for the teacher network.
 - Trained the teacher network on a combined RESIDE/I-Haze/O-Haze/NH-Haze dataset, reducing validation loss from 0.40 to 0.15 over 200 epochs.
-
-**Video Conferencing Website** — [Live](https://meet-clone-s9i0.onrender.com/) · [Source](https://github.com/aarifkhan7/meet-clone-frontend)
-- Tools & technologies used: React.js, Express.js, Socket.io, WebRTC (Peer.js).
-- Users create unique code-identified meeting rooms and share them to invite others.
-- Built the backend server with Express.js to handle rooms and connection setup, using peer-to-peer WebRTC for video streaming and Socket.io for WebRTC signalling.
 
 ## Education
 
