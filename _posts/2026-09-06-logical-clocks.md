@@ -1,0 +1,23 @@
+---
+title: Why Logical Clocks Matter
+description: >-
+  Quartz clocks drift, and telemetry timestamps inherit that drift. A look at
+  how clock skew can make a correctly ordered trace look reordered, and why
+  logical clocks answer a different question entirely.
+---
+
+Logical clocks can seem unnecessary to someone new to distributed systems. But the more time I spent reading through telemetry from distributed systems, the more it became clear to me that logical clocks are a must, because quartz clocks, the ordinary hardware clocks running inside every machine, can quietly mislead me about what's actually happening inside a system.
+
+I've relied on telemetry data to understand what's happening inside a system. This data is usually captured as traces and spans, the standard way distributed systems represent a request's journey. A trace is the full lifecycle of a request as it travels across different systems, in an e-commerce system, say, across the cart, order, and payment services. As the request moves through the system, each part it touches generates its own span, a record of the specific operation that part performed, such as reading from or writing to a database, or calling some other service. A span records the operation itself along with a timestamp and a duration for how long it took, and it also carries a parent-span-id, which links it back to the span that called it, so I can reassemble the whole trace into a tree showing which service called which. Most of this happens without much thought on my part, since telemetry libraries, the instrumentation code that generates and exports spans, quietly handle a lot of edge cases on their own: retried calls, concurrent spans on the same thread, clock adjustments mid-request, and so on. That's convenient day to day, but it also means the timestamps I end up looking at have already passed through several layers I didn't write and don't fully control.
+
+The timestamp on a span usually comes from the epoch clock, the operating system's own record of wall-clock time, on the machine where that span ran. At first glance this seems fine: if span A finished before span B in real life, I'd expect span A's timestamp to be earlier than span B's. But that expectation asks more of independent clocks than they can deliver. Clocks on different machines drift apart over time, a phenomenon called clock skew, and even when I sync them, network latency, the time a sync message takes to travel between machines, can't be measured precisely enough to correct for. So some amount of skew always remains.
+
+This becomes a real problem when I expect two operations, running on different machines, to always happen in a particular order, say, because they're coordinated through a lock or similar mechanism that should guarantee the order. If the machines' clocks have drifted, the timestamps in my telemetry can show the operations in the wrong order, even though the coordination mechanism worked correctly. I'd be looking at a trace that appears to violate its own ordering guarantees, when really it's the clock, not the system, that's lying to me.
+
+I ended up building a small project, [otel-skew](https://github.com/aarifkhan7/otel-skew), to see this happen on demand instead of waiting to stumble into it in production. It's a Java service that calls two child processes, and instead of letting OpenTelemetry, the tracing standard I'm using here, stamp each span with the real time it ran, I set the timestamps myself. One child is launched second but stamped with an earlier start time than the first. In Grafana Tempo, the trace backend I'm viewing this in, the waterfall shows child two starting before child one, even though child one was the one that actually ran first.
+
+<img src="{{ site.baseurl }}/assets/otel-trace-view-grafana.png" style="max-width:700px; width:100%; display:block; margin:0 auto;" alt="Trace waterfall showing do-work-child-2 starting at 50ms and do-work-child-1 at 200ms, even though child 1 was launched first">
+
+The code itself is completely ordinary and sequential; nothing about the execution is out of order. Only the recorded timestamps are wrong, which is exactly what real clock skew looks like from a backend's point of view: it has no way to tell a genuinely reordered trace from a correctly ordered one with bad timestamps, because both arrive as the same kind of data.
+
+This is the gap logical clocks are built to close. Instead of asking "what time did this happen," a logical clock asks "what happened before what," and answers that question using the causal relationships between events, like message sends and receives, rather than wall-clock time. It doesn't touch physical hardware at all, so skew never enters the picture.
